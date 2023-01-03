@@ -10,7 +10,7 @@ SpaceFoward, an aerospace company, is anticipating a mission to Mars and require
 
 ## **Resources**
 - Resources/ Mars Planet Science Website: https://redplanetscience.com/
-- Software: Jupyter Notebook, Visual Studio Code, Python, Pandas, Splinter, Beautiful Soup, WebDriver Manager, Matplotlib
+- Software: Jupyter Notebook, Visual Studio Code, Python, Pandas, Splinter, Beautiful Soup, WebDriver Manager, Matplotlib, DateTime
 
 ## **Results**
 The first objective was to gather news information on Mars. This was accomplished by identifying HTML elements on the Mars Planet Science Website and extracting pertinent information via automated browsing with Splinter and HTML parsing with Beautiful Soup. The information was scraped and saved to a list containing news article titles and article summaries. The list was saved to a json file to easily share with colleagues for further analysis.
@@ -26,6 +26,6 @@ The second objective was to scrape Mar’s weather data from a table on a websit
 ![pressure](images/avg_pressure_month.png)
 - The last goal was to use the data to determine how many earth days equivalate to one year on Mars. The Min_Temp column in the Mars_df was graphed over each day of data. The coldest day of the year appears at the top of each peak. To view the graph more clearly, the LS column, or solar longitude was graphed. This represents where Mars is in relation to the sun as it orbits, with 0 marking a full orbit and starting in the original position. So each peak is a Mars year apart from one another. To calculate the amount of terrestrial time that has lapsed, the terrestrial date of peak 1 was subtracted from the terrestrial date of peak 2. This calculated that there are 687 Earth days to one Martian Year. See below for visual references.
 
-![temp](images/temp.png)
+![temp](images/temp_over_time.png)
 ![pressure](images/solar_long.png)
 ![df](images/df.png)
